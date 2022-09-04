@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+:root {
+  --primary-color: rgb(214, 178, 210);
+  --primary-color-darker: rgb(200, 117, 186);
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container {
+  width: 640px;
+  margin: 50px auto;
+  height: 370px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  padding: 50px 40px;
+  box-shadow: 0 20px 65px rgb(68, 22, 98);
+  position: relative;
+  border-radius: 10px;
+  text-align: center
+}
+
+.caontainer::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  background-color: #ffffff;
+  z-index: -1;
+  top: -10%;
+}
+
+.container p {
+  color: rgb(93, 46, 46);
+  line-height: 2;
+  font-size: 20px;
+}
+
+.container h3 {
+  color: #251313;
+  margin: 20px 0 60px 0;
+  font-weight: 6000;
+  text-transform: capitalize;
+
+}
+
+.container button {
+  background-color: #000000;
+  border: none;
+  padding: 15px 45px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #e5beda;
+  cursor: pointer;
+}
+
+.cont .imageContainer {
+
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cont .imageContainer img {
+
+  height: 100%;
+  width: 100px;
+}
+
+form input,
+form label,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+}
